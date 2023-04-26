@@ -7,8 +7,8 @@ from utils import read_data, write_to_tfrecord
 
 def train_test_split_avazu(source_dir, target_dir, ratio=0.8):
     all_file = os.path.join(source_dir, 'full.csv')
-    train_file = os.path.join(target_dir, 'train.txt')
-    test_file = os.path.join(target_dir, 'test.txt')
+    train_file = os.path.join(target_dir, 'train.csv')
+    test_file = os.path.join(target_dir, 'test.csv')
 
     df = pd.read_csv(all_file)
     day = df['hour'] // 100

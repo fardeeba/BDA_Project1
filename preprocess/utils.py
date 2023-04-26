@@ -4,7 +4,7 @@ import os
 import tensorflow.compat.v1 as tf
 
 def read_data(source_dir, CONTS, CATES, name='train'):
-    file = os.path.join(source_dir, name + '.txt')
+    file = os.path.join(source_dir, name + '.csv')
     cate_cols = ["cate_{}".format(i+1) for i in range(CATES)]
     cont_cols = ["cont_{}".format(i+1) for i in range(CONTS)]
     cont_cate_cols = cont_cols + cate_cols
