@@ -23,7 +23,7 @@ parser.add_argument('--debug_mode', type=int, default=0,
                     help='whether log and save the model and the output, 0 indicates yes, others indicate no')
 parser.add_argument('--dataset', type=str, default='avazu',
                     help='select dataset')
-parser.add_argument('--data_path', type=str, default=current_path + '/kaggle/input/bda-avazu/datasets',
+parser.add_argument('--data_path', type=str, default=current_path + '/kaggle/input/bda-avazu/data',
                     help='location of the data corpus')
 parser.add_argument('--bsize', type=int, default=2, help='batch size')
 parser.add_argument('--lr', type=float, default=1e-3, 
