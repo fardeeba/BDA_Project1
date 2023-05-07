@@ -54,7 +54,7 @@ def generate_orig_24(source_dir, target_dir, X=5):
     write_to_tfrecord(cate_train_X, train_y, orig_dir, CONTS, CATES, COMBS, name='train')
     write_to_tfrecord(cate_test_X, test_y, orig_dir, CONTS, CATES, COMBS, name='test')
 
-def generate_comb_276(source_dir, target_dir, X=5, Y=1):
+def generate_comb_276(source_dir, target_dir, X=4, Y=1):
     CONTS = 0
     CATES = 24
     COMBS = 276
