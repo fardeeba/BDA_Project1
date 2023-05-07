@@ -27,7 +27,7 @@ def train_test_split_avazu(source_dir, target_dir, ratio=0.8):
     train_df.to_csv(train_file, sep='\t', header=None, index=False)
     test_df.to_csv(test_file, sep='\t', header=None, index=False)
 
-def generate_orig_24(source_dir, target_dir, X=5):
+def generate_orig_24(source_dir, target_dir, X=4):
     CONTS = 0
     CATES = 24
     COMBS = 0
